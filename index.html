@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Defend your City</title>
+	<style>
+		#space{
+			background: #000000 url(images/pixel_grid.jpg);
+			width: 400px;
+			height: 200px;
+			position: relative;
+			overflow: hidden;
+		}
+		#asteroid{
+			background: #988989;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 10px;
+		}
+		#trampoline{
+			background: #FF1493;
+			left: 300px;
+			top: 70px;
+			position: absolute;
+			width: 30px;
+			height: 70px;
+		}
+		#trampolineImpact{
+			background: #8B0000;
+			left: 50px;
+			top: 70px;
+			position: absolute;
+			width: 30px;
+			height: 70px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Defend your City</h1>
+	</header>
+	<div id="score">
+		<div class="score">Score: 
+			<span id="score">
+				0
+			</span>
+		</div>
+	</div>
+	<div id="game">
+		<div id="space">
+			<div id="trampoline" class="trampoline"></div>
+			<div id="asteroid" class="asteroid"></div>
+		</div>
+	</div>
+	<footer>
+		Dont let the bouncy asteroid crash onto your City
+	</footer>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/citydefense.js"></script>
+</body>
+</html>
